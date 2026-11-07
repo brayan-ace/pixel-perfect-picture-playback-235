@@ -30,16 +30,20 @@ function Index() {
         <img src={hero} alt="Snowmobile carving through deep powder in the mountains at dusk" width={1920} height={1088} fetchPriority="high" className="absolute inset-0 h-full w-full object-cover animate-slow-zoom" />
         <div className="absolute inset-0 bg-side-overlay" />
         <div className="absolute inset-0 bg-hero-overlay opacity-70" />
-        <div className="relative mx-auto w-full max-w-7xl px-5 pt-20 md:px-8">
+        <div className="absolute inset-0 bg-background/50 sm:hidden" />
+        <div className="relative mx-auto w-full max-w-7xl px-5 pt-24 pb-20 md:px-8 md:pt-20 md:pb-0">
           <Reveal className="max-w-3xl">
             <p className="eyebrow">Premium snowmobile dealership</p>
-            <h1 className="mt-6 text-7xl font-extrabold uppercase leading-[0.85] sm:text-8xl lg:text-[9rem]">
-              Built for the <span className="text-ice">extraordinary.</span>
+            <h1 className="mt-6 text-4xl font-extrabold uppercase leading-[0.92] tracking-tight sm:text-7xl sm:leading-[0.85] md:text-8xl lg:text-[9rem]">
+              Built for the{" "}
+              <span className="block text-primary drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] sm:inline">
+                extraordinary.
+              </span>
             </h1>
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-foreground/80">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground/90 sm:mt-8 sm:text-lg sm:text-foreground/80">
               Discover powerful snowmobiles designed to take your winter adventures further. Explore our collection and find your next ride.
             </p>
-            <div className="mt-10 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3 sm:mt-10">
               <Link to="/collection" className={btn({ size: "lg" })}>
                 Explore Collection <ArrowRight className="h-4 w-4" />
               </Link>

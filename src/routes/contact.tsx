@@ -28,7 +28,7 @@ export const Route = createFileRoute("/contact")({
           </span>
           <div>
             <p className="eyebrow">WhatsApp</p>
-            <p className="mt-2 font-display text-5xl font-extrabold">{WHATSAPP_DISPLAY}</p>
+            <p className="mt-2 font-display text-3xl font-extrabold sm:text-4xl md:text-5xl">{WHATSAPP_DISPLAY}</p>
           </div>
           <WhatsAppButton size="lg">Start a chat</WhatsAppButton>
         </div>

@@ -136,7 +136,7 @@ export function FinalCta({ image }: { image: string }) {
       <div className="relative mx-auto max-w-7xl px-5 py-36 md:px-8">
         <Reveal className="max-w-2xl">
           <p className="eyebrow">Let's ride</p>
-          <h2 className="mt-4 text-6xl font-extrabold uppercase leading-[0.9] md:text-8xl">Your next adventure starts here.</h2>
+          <h2 className="mt-4 text-4xl font-extrabold uppercase leading-[0.95] sm:text-6xl md:text-8xl">Your next adventure starts here.</h2>
           <p className="mt-6 text-lg text-foreground/80">Found the snowmobile you've been looking for? Let's talk.</p>
           <WhatsAppButton size="lg" className="mt-10">Chat with us on WhatsApp</WhatsAppButton>
         </Reveal>
@@ -152,7 +152,7 @@ export function PageHero({ eyebrow, title, image, children }: { eyebrow: string;
       <div className="absolute inset-0 bg-hero-overlay" />
       <div className="relative mx-auto w-full max-w-7xl px-5 pb-16 md:px-8">
         <p className="eyebrow">{eyebrow}</p>
-        <h1 className="mt-4 max-w-4xl text-6xl font-extrabold uppercase leading-[0.9] md:text-8xl">{title}</h1>
+        <h1 className="mt-4 max-w-4xl text-4xl font-extrabold uppercase leading-[0.95] sm:text-6xl md:text-8xl">{title}</h1>
         {children && <p className="mt-5 max-w-xl text-foreground/80">{children}</p>}
       </div>
     </section>
